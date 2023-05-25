@@ -22,17 +22,15 @@ def smear(xmin,ymin,xmax,ymax,img,type,color):
     return 
 
 def blood_seg_new(xmin, ymin, xmax, ymax, img):
-    shr = np.ones([480, 640, 3])*0
-    shr[ymin:ymax, xmin:xmax, 0:3] = img[ymin:ymax, xmin:xmax, 0:3]
-    #shr[ymin:ymax, xmin:xmax, 0:1] = img[ymin:ymax, xmin:xmax, 0:1]
-
-    cv2.imshow("try", shr[ymin:ymax, xmin:xmax, 0])
-    cv2.waitKey()
-    return shr
-
+    y, x, c = img.shape
+    img[0:ymin, :, :] = np.zeros([ymin, x, 3])
+    img[ymax:, :, :] = np.zeros([y-ymax, x, 3])
+    img[:, 0:xmin, :] = np.zeros([y, xmin, 3])
+    img[:, xmax:, :] = np.zeros([y, x-xmax, 3])
+    
     #cv2.putText(img, type, (xmin + 10, ymin + 15),
 							#cv2.FONT_HERSHEY_SIMPLEX, 1e-3 * img.shape[0], color, 2)
-    #return 
+    return 
     
 blood = "BloodImage_00123.jpg"
 #img = np.zeros([640, 640, 3])
@@ -54,13 +52,14 @@ for i,name in enumerate(celltypes):
         xmax = int(rslt_df1["xmax"][ind])
         ymin = int(rslt_df1["ymin"][ind])
         ymax = int(rslt_df1["ymax"][ind])
-        #smear(xmin,ymin,xmax,ymax,img,type=name,color=colors[i])
+        smear(xmin,ymin,xmax,ymax,img,type=name,color=colors[i])
 
-        img1 = blood_seg_new(xmin, ymin, xmax, ymax, img)
+        blood_seg_new(xmin, ymin, xmax, ymax, img)
 
-#hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+bob_img = cv2.imread('/home/sarayu941/blood_imaging/BCCD_Dataset/BCCD/JPEGImages/'+blood, cv2.IMREAD_GRAYSCALE)
 
-cv2.imshow('Filtered_original',img1)
+cv2.imshow('Filtered_original',bob_img)
 cv2.waitKey()
 
 print()
