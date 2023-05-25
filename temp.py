@@ -28,8 +28,6 @@ def blood_seg_new(xmin, ymin, xmax, ymax, img):
     img[:, 0:xmin, :] = np.zeros([y, xmin, 3])
     img[:, xmax:, :] = np.zeros([y, x-xmax, 3])
     
-    #cv2.putText(img, type, (xmin + 10, ymin + 15),
-							#cv2.FONT_HERSHEY_SIMPLEX, 1e-3 * img.shape[0], color, 2)
     return 
     
 blood = "BloodImage_00123.jpg"
