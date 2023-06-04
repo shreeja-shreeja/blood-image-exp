@@ -3,7 +3,7 @@ import numpy as np
 import requests
 import pandas as pd
 
-blood = "BloodImage_00304.jpg"
+blood = "BloodImage_00003.jpg"
 
 def get_image(url):
     local_filename = 'blood.jpg'
