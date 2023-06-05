@@ -16,6 +16,17 @@ BCCD dataset https://github.com/Shenggan/BCCD_Dataset were uploaded in the Pytho
 
 Color determination was done to distinctively characterize the WBC, RBC and Platelet cells from each other. Images were converted from BGR to HSV. Then upper and lower bounds as the range of color values were identified and later used for segmentation.
 
+The HSV values of RBC, WBC and Platelets were marked on several images using color_click.py and ploted using seaborn. Thresholds were determined from these values using max and min.
+
+#### HSV for RBC
+![img](outputrbc.png)
+
+#### HSV for WBC
+![img](outputwbc.png)
+
+#### HSV for platelets
+![img](outputplatelets.png)
+
 ### Image Segmentation
 
 Images were segmentated using Otsu’s binarization technique. Only grayscale version of the color filtered images were used.
