@@ -21,7 +21,7 @@ The HSV values of RBC, WBC and Platelets were marked on several images using col
 ### HSV for RBC, WBC and Platelets respectively
 
 <figure float="left">
-  <img src="outputrbc.png" width=270 title="RBC-HSV"/><img src="outputwbc.png" width=270 title="WBC-HSV"/><img src="outputplatelets.png" width=270 title="Platelets-HSV"/>
+  <img src="outputrbc.png" width=210 title="RBC-HSV"/><img src="outputwbc.png" width=210 title="WBC-HSV"/><img src="outputplatelets.png" width=210 title="Platelets-HSV"/>
 </figure>
 
 ### Image Segmentation
