@@ -18,17 +18,16 @@ Color determination was done to distinctively characterize the WBC, RBC and Plat
 
 The HSV values of RBC, WBC and Platelets were marked on several images using color_click.py and ploted using seaborn. Thresholds were determined from these values using "max" and "min".
 
-#### HSV for RBC
-![img](outputrbc.png)
+### HSV for RBC, WBC and Platelets respectively
 
-#### HSV for WBC
-![img](outputwbc.png)
-
-#### HSV for platelets
-![img](outputplatelets.png)
+<figure float="left">
+  <img src="outputrbc.png" width=270 title="RBC-HSV"/>
+  <img src="outputwbc.png" width=270 title="WBC-HSV"/>
+  <img src="outputplatelets.png" width=270 title="Platelets-HSV"/>
+</figure>
 
 ### Image Segmentation
-
+ 
 Images were segmentated using Otsu’s binarization technique. Only grayscale version of the color filtered images were used.
 
 ### Blob Detection
