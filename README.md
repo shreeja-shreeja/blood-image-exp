@@ -18,7 +18,7 @@ Color determination was done to distinctively characterize the WBC, RBC and Plat
 
 The HSV values of RBC, WBC and Platelets were marked on several images using color_click.py and ploted using seaborn. Thresholds were determined from these values using "max" and "min".
 
-### HSV for RBC, WBC and Platelets respectively
+#### HSV for RBC, WBC and Platelets 
 
 <table>
   <tr> <td align="center"> RBC </td> <td align="center"> WBC </td> <td align="center"> Platelets </td> </tr>
