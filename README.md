@@ -1,7 +1,7 @@
 # blood-image-exp
 BCCD dataset https://github.com/Shenggan/BCCD_Dataset
 
-# IEEE paper on blood cell counting
+### IEEE paper on blood cell counting
 https://ieeexplore.ieee.org/document/8652384
 
 The primary objective is to present a more accurate counting of blood cells using the python OpenCV programming language. It covers image processing and analysis of platelets, red blood cells and white blood cells. This study presented a accurate counting of the specified types of cell. The algorithm used in this implimentation consist of five (5) steps: Image Uploading, Color Filtering, Image Segmentation, Blob Detection and the Cell Counting.
