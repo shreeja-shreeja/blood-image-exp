@@ -44,6 +44,8 @@ The original paper splits blood images into 10 segments before applying the algo
 
 # Image processing with Machine Learning Model
 
+### Reference: https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html 
+
 
 
 
