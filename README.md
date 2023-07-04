@@ -46,9 +46,23 @@ The original paper splits blood images into 10 segments before applying the algo
 
 ### Reference: https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html 
 
+#### Defining the Dataset
 
+For this experiment, we use torch 1.11 model. Here we are finetuning a pre-trained Mask R-CNN model into the BCCD data set. Clone the BCCD data set and use the new features in torch-vision in order to train an instance segmentation model on a custom dataset. Here IPL library is imported. This converts the Image and annotations to a desired model that is required for this pretrained model. 
 
+Open the Image, initially it creats a black image. Here the cell types have 4 classes. Label the cell types as "RBC = 1", "WBC = 2", "Platelets = 3", and "Background = 0". Using x min, y min, x max, and y max mark the annotations with the labels. Once the boxes and labels are marked, if the cell types are encoded as different colors, then mask the number of boxes. Then calculate the area of each boxes and transform it in the pre-trained model. Inference these results. Then extract annotations for one image. To improve the quality of the prediction get transform for training purpose. 
 
+#### Draw the image "Writing a custom dataset"
+
+Pil_smear is used to draw boxes to the cell types. Plot annotations only if the score > 0.5. Get the pre-trained model, get torch (No of classes = 4). Load the BCCD data set and fine-tune it. 
+
+#### Inference using GPU / CPU
+
+Get the torch model, retrain 1570 BCCD data. For model evaluation, give the image to the model and predict the image. 
+
+#### Note 
+
+Prediction done using this pre-trained model and machine learning is more accurate when compared to the image processing done using blob detection and counting.
 
 
 
