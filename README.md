@@ -1,4 +1,4 @@
-# blood-image-exp
+# Blood smear segmentation and cell type detection using BCCD dataset with and without machine learning
 BCCD dataset https://github.com/Shenggan/BCCD_Dataset
 
 ### IEEE paper on blood cell counting
