@@ -72,7 +72,7 @@ Following are the steps employed for finetuning
 
 
 ![img](Mask_R_CNN.png) 
-*Mask R CNN Structure*
+*Mask R CNN*
 
 
 
@@ -80,6 +80,7 @@ Following are the steps employed for finetuning
 ![img](Anotated_Image.png)
 
 ![img](Predicted_Image.png)
+
 
 
 
