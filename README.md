@@ -6,7 +6,7 @@ https://ieeexplore.ieee.org/document/8652384
 
 The primary objective is to present a more accurate counting of blood cells using the Python OpenCV programming language. It covers image processing and analysis of platelets, red blood cells, and white blood cells. This study presented an accurate counting of the specified types of cells. The algorithm used in this implementation consists of five (5) steps: Image Uploading, Color Filtering, Image Segmentation, Blob Detection, and Cell Counting.
 
-![img](algorithm.png)
+![img](pngs/algorithm.png)
 
 ### Image Uploading
 
@@ -22,7 +22,7 @@ The HSV values of RBC, WBC, and Platelets were marked on several images using co
 
 <table>
   <tr> <td align="center"> RBC </td> <td align="center"> WBC </td> <td align="center"> Platelets </td> </tr>
-  <tr> <td> <img src="outputrbc.png" width=270 title="RBC-HSV"/></td> <td><img src="outputwbc.png" width=270 title="WBC-HSV"/></td> <td><img src="outputplatelets.png" width=270 title="Platelets-HSV"/></td> </tr>
+  <tr> <td> <img src="pngs/outputrbc.png" width=270 title="RBC-HSV"/></td> <td><img src="pngs/outputwbc.png" width=270 title="WBC-HSV"/></td> <td><img src="pngs/outputplatelets.png" width=270 title="Platelets-HSV"/></td> </tr>
 </table>
 
 ### Image Segmentation
@@ -71,15 +71,15 @@ Following are the steps employed for finetuning
 6. Save the finetuned model.
 
 
-![img](Mask_R_CNN.png) 
+![img](pngs/Mask_R_CNN.png) 
 *Mask R CNN*
 
 
 
 
-![img](Anotated_Image.png)
+![img](pngs/Anotated_Image.png)
 
-![img](Predicted_Image.png)
+![img](pngs/Predicted_Image.png)
 
 
 
