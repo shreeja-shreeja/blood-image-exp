@@ -99,6 +99,5 @@ Prediction done using this pre-trained model and machine learning is more accura
 
 
 # Run the notebook in Colab
-https://colab.research.google.com/github/shreeja-shreeja/blood-image-exp/blob/main/blood_segment.ipynb
 
 https://colab.research.google.com/github/shreeja-shreeja/blood-image-exp/blob/main/blood_cell_count.ipynb
