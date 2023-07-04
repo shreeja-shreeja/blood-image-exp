@@ -70,6 +70,19 @@ Following are the steps employed for finetuning
 5. Train for N (e.g., 10) epochs using the custom dataset. Store training and validation losses
 6. Save the finetuned model.
 
+
+![img](Mask_R_CNN.png) 
+*Mask R CNN Structure*
+
+
+
+
+![img](Anotated_Image.png)
+
+![img](Predicted_Image.png)
+
+
+
 #### Inference using GPU / CPU
 
 Following are the steps employed for inference.
